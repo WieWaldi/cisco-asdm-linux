@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# +----------------------------------------------------------------------------+
+# | asdm                                                                       |
+# +----------------------------------------------------------------------------+
+# |       Usage: asdm hostname/IP                                              |
+# | Description: Wrapper script to start Cisco ASDM on Linux                   |
+# |    Requires: ---                                                           |
+# |       Notes: ---                                                           |
+# |      Author: Waldemar Schroeer                                             |
+# |     Company: Rechenzentrum Amper                                           |
+# |     Version: 3                                                             |
+# |     Created: 28.09.2023                                                    |
+# |    Revision: ---                                                           |
+# |                                                                            |
+# | Copyright © 2023 Waldemar Schroeer                                         |
+# |                  waldemar.schroeer(at)rz-amper.de                          |
+# +----------------------------------------------------------------------------+
+
+ ~/.local/Java/jre1.8.0_341/bin/javaws https://${1}/admin/public/asdm.jnlp &
+
+# +----- End ------------------------------------------------------------------+
+exit 0
+
